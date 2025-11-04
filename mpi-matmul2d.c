@@ -51,10 +51,7 @@ int main(void){
 
     //TASK: Broadcast batchPerProcess to all ranks. Use man MPI_Bcast to get the syntax
 
-    //Create local matrices
-    float *localMat1 = (float*)malloc(batchPerProcess * N * N * sizeof(float));
-    float *localMat2 = (float*)malloc(batchPerProcess * N * N * sizeof(float));
-    float *localRes = (float*)malloc(batchPerProcess * N * N * sizeof(float));
+    //TASK: Create local arrays that will store the batches of data per process
 
     //TASK: Scatter the initialised matrices from rank 0 to all other ranks. Use man MPI_Scatter to get the syntax.
     //The send and recv counts will be - batchPerProcess * N * N
